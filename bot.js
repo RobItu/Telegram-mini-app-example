@@ -1,10 +1,11 @@
 // This bot returns the Vercel URL to users when they /start conversation with bot.
+require("dotenv").config();
 
 // Import the telegram bot library
 const TelegramBot = require("node-telegram-bot-api");
 
 // Replace 'YOUR_TELEGRAM_BOT_TOKEN' with your bot's token
-const token = "6711794065:AAFUYBR0pW-w-QwFd4QqR94WTtXGQ_BdLAs";
+const token = process.env.TELEGRAM_BOT_API_TOKEN;
 
 // Create a bot that uses 'polling' to fetch new updates
 const bot = new TelegramBot(token, { polling: true });

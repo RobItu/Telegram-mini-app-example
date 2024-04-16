@@ -5,10 +5,20 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  flex-direction: column; /* Set flex direction to column to stack divs vertically */
+}
+
+body h1 {
+  text-align: center;
 }
 
 button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+}
+
+#camera_div,
+#capture_div {
+  margin-bottom: 20px; /* Add some spacing between the divs */
 }

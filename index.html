@@ -8,9 +8,15 @@
   </head>
   <body>
     <h1>Welcome to My Telegram Mini App</h1>
-    <button id="sendMessage">Send Message</button>
-    <input type="file" id="fileInput" />
-    <button id="uploadButton">Upload File</button>
+    <div id="camera_div">
+      <video id="video" width="640" height="480" autoplay></video>
+    </div>
+    <div id="capture_div">
+      <button id="startCamera">Start Camera</button>
+      <button id="capture">Capture Photo</button>
+      <button id="switchCamera">Switch Camera</button>
+    </div>
+
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="app.js"></script>
   </body>

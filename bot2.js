@@ -1,5 +1,7 @@
 const TelegramBot = require("node-telegram-bot-api");
-const token = "6711794065:AAFUYBR0pW-w-QwFd4QqR94WTtXGQ_BdLAs";
+require("dotenv").config();
+
+const token = process.env.TELEGRAM_BOT_API_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 
 const WEB_APP_URL = "https://telegram-mini-app-example.vercel.app/"; // Your Mini App URL
