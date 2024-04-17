@@ -20,8 +20,8 @@ Before you begin, ensure you have met the following requirements:
 
 To install the Telegram Mini App, follow these steps:
 
-1. Clone the repository:
-2. ``npm install`
+1. Clone the repository
+2. ```npm install```
 3. `bot.js` and `bot2.js` have different functions. The former returns the mini app link when users "/start" the conversation witht the bot. The latter greets the users and presents them with the button to open the mini-app. Depending on which you want, you must run a `node` server so it can listen to the bot.
 
 ```
