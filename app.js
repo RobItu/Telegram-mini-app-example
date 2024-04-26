@@ -1,3 +1,9 @@
+/**
+ * When webpage is loaded (DOM) it will obtain the video, canvas and Switch/Capture buttons from HTML
+ * when users click on capture button, the image will be encoded and output on the browser console
+ *
+ */
+
 document.addEventListener("DOMContentLoaded", function () {
   const video = document.getElementById("video");
   const canvas = document.getElementById("canvas");
@@ -6,32 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const switchCameraButton = document.getElementById("switchCamera");
   const cameraList = document.getElementById("cameraList");
   let currentStream;
-  //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-  //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  // Get access to the camera
-  // if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-  //   navigator.mediaDevices
-  //     .getUserMedia({ video: true })
-  //     .then(function (stream) {
-  //       const video = document.getElementById("video");
-  //       if ("srcObject" in video) {
-  //         video.srcObject = stream;
-  //       } else {
-  //         // Older browsers may not support srcObject directly
-  //         video.src = window.URL.createObjectURL(stream);
-  //       }
-  //       video.onloadedmetadata = function (e) {
-  //         video.play();
-  //       };
-  //     })
-  //     .catch(function (error) {
-  //       console.error("Error accessing the camera: ", error);
-  //       alert("Failed to access the camera.");
-  //     });
-  // } else {
-  //   alert("getUserMedia() is not supported by your browser.");
-  // }
 
   // Capture the photo
   captureButton.addEventListener("click", function () {
@@ -42,6 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(imageData);
   });
 });
+
+/***
+ * When users clicks on Start Camera button, it will prompt the user to allow for permission
+ * If permission is granted, Camera will start
+ * If no camera is present, or permission is denied, error will be outputed.
+ ***/
 
 document.getElementById("startCamera").addEventListener("click", function () {
   if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
