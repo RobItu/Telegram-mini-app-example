@@ -16,6 +16,18 @@
       <button id="capture">Capture Photo</button>
       <button id="switchCamera">Switch Camera</button>
     </div>
+    <div id="cameras-input">
+      <label for="selfie" class="capture-button">Take a Selfie</label>
+      <input type="file" id="selfie" capture="user" accept="image/*,video/*" />
+
+      <label for="photo" class="capture-button">Take a Photo</label>
+      <input
+        type="file"
+        id="photo"
+        capture="environment"
+        accept="image/*,video/*"
+      />
+    </div>
 
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="app.js"></script>
