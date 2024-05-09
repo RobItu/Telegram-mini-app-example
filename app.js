@@ -11,7 +11,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const captureButton = document.getElementById("capture");
   const switchCameraButton = document.getElementById("switchCamera");
   const cameraList = document.getElementById("cameraList");
+  const greeting = document.getElementById("greeting"); // Ensure you have a corresponding HTML element for this
   let currentStream;
+
+  // Check if the Telegram WebApp API is available
+  if (window.Telegram.WebApp) {
+    // Access the user's Telegram ID
+    const telegramUserID = Telegram.WebApp.initDataUnsafe.user.id;
+    // Display a greeting message with the user's Telegram ID
+    greeting.textContent = `Hello Telegram user: ${telegramUserID}`;
+  } else {
+    greeting.textContent = "Hello, unable to retrieve user ID.";
+  }
 
   // Capture the photo
   captureButton.addEventListener("click", function () {
