@@ -2,6 +2,8 @@
 
 This project is a Telegram Mini App designed to demonstrate the integration of camera functionality directly within the Telegram app. Users can start the camera, capture photos, and switch between the front and rear cameras.
 
+**Try it Out:** https://telegram-mini-app-example.vercel.app/
+
 ## Features
 
 - **Start Camera**: Allows users to activate the camera within the app.
