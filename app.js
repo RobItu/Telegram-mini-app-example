@@ -15,13 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentStream;
 
   // Check if the Telegram WebApp API is available
-  if (window.Telegram.WebApp) {
-    // Access the user's Telegram ID
-    const telegramUserID = Telegram.WebApp.initDataUnsafe.user.id;
-    // Display a greeting message with the user's Telegram ID
-    greeting.textContent = `Hello Telegram user: ${telegramUserID}`;
+  if (window.Telegram && window.Telegram.WebApp) {
+    Telegram.WebApp.ready();
+
+    const userID = Telegram.WebApp.initDataUnsafe.user.id;
+    const greeting = document.getElementById("greeting");
+    greeting.textContent = `Hello Telegram user: ${userID}`;
   } else {
-    greeting.textContent = "Hello, unable to retrieve user ID.";
+    const greeting = document.getElementById("greeting");
+    greeting.textContent =
+      "This app must be run within the Telegram environment.";
   }
 
   // Capture the photo
