@@ -7,25 +7,34 @@
 document.addEventListener("DOMContentLoaded", function () {
   const video = document.getElementById("video");
   const canvas = document.getElementById("canvas");
-  const context = canvas.getContext("2d");
+  //const context = canvas.getContext("2d");
   const captureButton = document.getElementById("capture");
   const switchCameraButton = document.getElementById("switchCamera");
   const cameraList = document.getElementById("cameraList");
-  const greeting = document.getElementById("greeting"); // Ensure you have a corresponding HTML element for this
   let currentStream;
 
-  // Check if the Telegram WebApp API is available
-  if (window.Telegram && window.Telegram.WebApp) {
-    Telegram.WebApp.ready();
+  const userIdDisplay = document.getElementById("userIdDisplay");
+  const showUserIdButton = document.getElementById("showUserId");
 
-    const userID = Telegram.WebApp.initDataUnsafe.user.id;
-    const greeting = document.getElementById("greeting");
-    greeting.textContent = `Hello Telegram user: ${userID}`;
-  } else {
-    const greeting = document.getElementById("greeting");
-    greeting.textContent =
-      "This app must be run within the Telegram environment.";
-  }
+  showUserIdButton.addEventListener("click", function () {
+    // Make sure the Telegram WebApp API is available
+    if (window.Telegram && window.Telegram.WebApp) {
+      Telegram.WebApp.ready();
+      const userID = Telegram.WebApp.initDataUnsafe.user.id;
+      userIdDisplay.textContent = `Your Telegram ID is: ${userID}`;
+      const userData = Telegram.WebApp.initDataUnsafe.user;
+      console.log("User ID:", userData.id);
+      console.log("First Name:", userData.first_name);
+      console.log("Last Name:", userData.last_name);
+      console.log("Username:", userData.username);
+      console.log("Language Code:", userData.language_code);
+      console.log("Is Bot:", userData.is_bot);
+      console.log("Photo URL:", userData.photo_url);
+    } else {
+      userIdDisplay.textContent =
+        "This feature is only available within the Telegram app.";
+    }
+  });
 
   // Capture the photo
   captureButton.addEventListener("click", function () {
