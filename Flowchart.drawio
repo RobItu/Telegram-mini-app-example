@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-09T20:17:46.125Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="Gp3ui8Bk7n57rykPwtDZ" version="24.3.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-05-13T21:15:26.302Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="4tcpd6cOS4jpnV7FPKSx" version="24.3.1" type="github" pages="2">
   <diagram name="Page-1" id="pBbTRJXqXZo4k6cFpGII">
-    <mxGraphModel dx="1050" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1400" math="0" shadow="0">
+    <mxGraphModel dx="2284" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1400" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -86,7 +86,7 @@
         <mxCell id="UGfW0L7oNal3inAN7M51-19" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;App Use (User POV)&lt;/h1&gt;&lt;p&gt;Flowchart of users using mini-app&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="610" y="440" width="180" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="UGfW0L7oNal3inAN7M51-21" value="User opens mini-app" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="UGfW0L7oNal3inAN7M51-21" value="User enters mini-app" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="365" y="520" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="UGfW0L7oNal3inAN7M51-22" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="6Sj1fqQ_iFhuGv7eRnGK-1" edge="1">
@@ -149,6 +149,9 @@
               <mxPoint x="307" y="990" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="XuTQuPKD8NLD_KfWBNeu-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="6Sj1fqQ_iFhuGv7eRnGK-16" target="XuTQuPKD8NLD_KfWBNeu-6">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="6Sj1fqQ_iFhuGv7eRnGK-16" value="Upload picture" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="370" y="1110" width="120" height="60" as="geometry" />
@@ -215,11 +218,50 @@
             <mxPoint x="425.31999999999994" y="198.91999999999996" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="v7QlKK7ffQgxJ89KQDe1-1" value="&amp;nbsp;https://t.me/FFLG_Kindly_bot?start=miniapp" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="185" y="30" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FoVrwRLHM8cu8uWbEz_u-1" value="App collects user ID, name, etc" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="235" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1RscxfQDI9xdakKsmnbH-1" value="Once verified, user ID will be uploaded to AWS with TRUE verification value" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XuTQuPKD8NLD_KfWBNeu-2" value="" style="endArrow=none;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="424" y="310" as="sourcePoint" />
+            <mxPoint x="424" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XuTQuPKD8NLD_KfWBNeu-1" value="App checks AWS to see if user has been verified before" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="365" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XuTQuPKD8NLD_KfWBNeu-3" value="Ideally, these permissions will only have to be granted once.&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="620" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XuTQuPKD8NLD_KfWBNeu-4" value="If users have no internet, pictures will have to uploaded when there is." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="30" y="950" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XuTQuPKD8NLD_KfWBNeu-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="XuTQuPKD8NLD_KfWBNeu-6" target="XuTQuPKD8NLD_KfWBNeu-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XuTQuPKD8NLD_KfWBNeu-6" value="App will collect picture, metadata and Telegram user who uploaded." style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XuTQuPKD8NLD_KfWBNeu-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="XuTQuPKD8NLD_KfWBNeu-8" target="XuTQuPKD8NLD_KfWBNeu-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XuTQuPKD8NLD_KfWBNeu-8" value="App will push data to AWS" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XuTQuPKD8NLD_KfWBNeu-10" value="Chainlink Functions/Space and Time query data for Kindly website" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1270" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="-c9wPymRUNJhU-kyO57Z" name="Page-2">
-    <mxGraphModel dx="1050" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1400" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1400" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -304,6 +346,138 @@
         </mxCell>
         <mxCell id="KsV1zAsqcvZMEjQ52RBZ-13" value="Once verified, user ID will be uploaded to AWS with TRUE verification value" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="50" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="84EFyXwPCS9hQIMVp5ae-1" value="" style="endArrow=classic;html=1;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="404.5" y="470" as="sourcePoint" />
+            <mxPoint x="405" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="84EFyXwPCS9hQIMVp5ae-2" value="User enters mini-app" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="345" y="520" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-1" value="Upload File" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-2" value="Start Camera" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="Ix0HZLNp_d4PB9PU8gkS-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="640" as="sourcePoint" />
+            <mxPoint x="475" y="590" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="550" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-4" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="720" as="sourcePoint" />
+            <mxPoint x="550" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="309.71000000000004" y="720" as="sourcePoint" />
+            <mxPoint x="309.71000000000004" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-6" value="User snaps picture using front or rear facing camera" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-7" value="Is there internet?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="950" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-8" value="YES" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="505" y="960" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-9" value="NO" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="295" y="960" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-10" value="Save/keep picture on device" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="1010" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-11" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.445;entryY=-0.034;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="Ix0HZLNp_d4PB9PU8gkS-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="990" as="sourcePoint" />
+            <mxPoint x="280" y="990" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="307" y="990" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-12" value="Upload picture" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-13" value="User grants storage permissions" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-14" value="User grants camera permissions" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-15" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="990" as="sourcePoint" />
+            <mxPoint x="490" y="1140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="540" y="990" />
+              <mxPoint x="540" y="1140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-16" value="User finds and selects picture" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-17" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="Ix0HZLNp_d4PB9PU8gkS-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="880" as="sourcePoint" />
+            <mxPoint x="420" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-18" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.417;entryY=-0.002;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="431.04" y="880" as="sourcePoint" />
+            <mxPoint x="431.0400000000002" y="949.8799999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-19" value="" style="endArrow=classic;html=1;rounded=0;entryX=-0.037;entryY=0.269;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="Ix0HZLNp_d4PB9PU8gkS-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="1040" as="sourcePoint" />
+            <mxPoint x="330" y="990" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="160" y="1040" />
+              <mxPoint x="160" y="676" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-20" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="309.71" y="820" as="sourcePoint" />
+            <mxPoint x="309.71" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-21" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="820" as="sourcePoint" />
+            <mxPoint x="550" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-22" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.45;entryY=-0.083;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="Ix0HZLNp_d4PB9PU8gkS-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="404.5" y="600" as="sourcePoint" />
+            <mxPoint x="405" y="680" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="405" y="640" />
+              <mxPoint x="304" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ix0HZLNp_d4PB9PU8gkS-23" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="1170" as="sourcePoint" />
+            <mxPoint x="425" y="1240" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
